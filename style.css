@@ -1,0 +1,27 @@
+body {
+  background-color: #000;
+  color: gold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+button {
+  background-color: gold;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
+}
+
+.stake-item {
+  border: 1px solid gold;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 400px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>KJC Staking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>KJC Staking DApp</h1>
+  <button id="connectWallet">Connect Wallet</button>
+  <p id="status">❌ Not connected</p>
+
+  <h2>Stake KJC</h2>
+  <input type="number" id="stakeAmount" placeholder="Amount">
+  <button id="stakeButton">Stake</button>
+
+  <div id="stakesContainerTitle"></div>
+  <div id="stakesContainer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="config.js"></script>
+  <script src="abi.js"></script>
+  <script>
+    const erc20ABI = [{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"","type":"bool"}],"type":"function"}];
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
