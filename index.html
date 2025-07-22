@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KJC Staking</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="config.js"></script>
+  <script src="abi.js"></script>
+  <script src="erc20Abi.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>KJC Staking</h1>
+    <div id="status">❌ ยังไม่เชื่อมต่อ</div>
+    <button id="connectWallet">🔌 Connect Wallet</button>
+
+    <div id="stakeSection" style="margin-top: 30px;">
+      <h2>📥 Stake KJC</h2>
+      <input type="number" id="stakeAmount" placeholder="Enter amount" />
+      <button id="stakeButton">✅ Stake Now</button>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <h2>📊 Your Stakes</h2>
+      <div id="stakesContainer"></div>
+    </div>
+  </div>
+</body>
+</html>
